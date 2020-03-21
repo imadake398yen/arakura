@@ -7,9 +7,6 @@
   <title>富士吉田</title>
   <link rel="stylesheet" type="text/css" href="css/app.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
   <!-- for iOS -->
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="富士吉田">
@@ -20,43 +17,23 @@
 </head>
 <body>
 
-<div id="app">
-  <div id="example-1">
-    <div v-for="section in sections" :key="section.name">
-      {{ section.name }}
+<div>
+  <div class="sections">
+    <div class="section">
+      <div>
+        <p class="section_name">移動手段</p>
+        <div class="content">
+          <p class="content_name">日の丸タクシー</p>
+          <p class="phone_number" href="tel:09000000000">09000000000</p>
+        </div>
+        <div class="content">
+          <p class="content_name">富士山タクシー</p>
+          <p class="phone_number" href="tel:09000000000">09000000000</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-<script>
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    sections: [
-      {
-        name: "タクシー",
-        content: [
-          {
-            name: "ふじさんタクシー",
-            tel: "09000000000"
-          },
-          {
-            name: "うどんタクシー",
-            tel: "09000000000"
-          }
-        ]
-      },
-      {
-        name: "織物"
-      },
-      {
-        name: "ランチ"
-      }
-    ]
-  }
-})
-</script>
 
 </body>
 </html>
